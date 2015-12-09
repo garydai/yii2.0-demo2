@@ -50,21 +50,29 @@ class StarController extends Controller
     {
         
         $connection=Yii::$app->db;
-        $sql = "select * from stars ORDER BY CONVERT( name USING gbk ) COLLATE gbk_chinese_ci ASC ";
+        $sql = "select * from stars left join images on stars.avatar = images.id ORDER BY CONVERT( name USING gbk ) COLLATE gbk_chinese_ci ASC ";
         $stars = $connection->createCommand( $sql)->queryAll();
-        $stars[0] var_add
-       // var_dump ($stars);
-        return $this->render('archives', ['stars'=>$stars]);
+        var_dump ($stars);
+       // return $this->render('archives', ['stars'=>$stars]);
     }
 
     public function actionAlbums()
     {
         $connection=Yii::$app->db;
         $sql = "select * from stars ORDER BY CONVERT( name USING gbk ) COLLATE gbk_chinese_ci ASC ";
-        foreach ($stars as $star) {
-            
+        $stars = $connection->createCommand( $sql)->queryAll();
+        foreach ($stars as &$star) {
+            $sql = "select * from images where id in  ({$star['album']}) ";
+            $images = $connection->createCommand( $sql)->queryAll();
+            $star['albumUrl'] = $images;
+            $sql = "select * from images where id =  {$star['avatar']} ";
+            $images = $connection->createCommand( $sql)->queryAll();
+            $star['avatarUrl'] = $images[0];
+            //array_push($star, )
+           //var_dump( $star['albumUrl']);
         }
-        return $this->render('albums');
+      //  var_dump($stars);
+        return $this->render('albums',  ['stars' => $stars]);
     }
 
 }

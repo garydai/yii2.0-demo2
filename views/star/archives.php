@@ -9,7 +9,7 @@
 			</div>
 			<div class="user_l">
 				<a href="http://anyixuan.hbstars.com" target="_blank">
-					<img src="<?php echo $star['avatar']?>" alt=<?php echo $star["name"] ?> />
+					<img src="<?php echo $star['image']?>" alt=<?php echo $star["name"] ?> />
 				</a>
 			</div>
     	<?php } ?>

@@ -19,7 +19,7 @@
 			<div class="u-nitm">
 			<img src="<?php echo '../Images/Stars/vdo_'.$star['namefirstchar'].'.png' ?>" alt="" />
 	<?php }    ?> 
-	<a id="<?php echo $star['id'] ?>" href="#" onclick="setAlbum(<?php echo "'".$star['id']."'" ?>);"><?php echo $star['name']?></a>
+	<a id="<?php echo "S".$star['id'] ?>" href="#" onclick="setAlbum(<?php echo "'".$star['id']."'" ?>);"><?php echo $star['name']?></a>
 	
 <?php }?>
 </div>
@@ -27,8 +27,8 @@
 </div></div>
 <?php if(count($stars)){ $fristStar = $stars[0];?>
 <div class="photoDiv">
-<input id="WebDomain" type="hidden" value="http://localhost/" />
-<div id="CurStarName" w="705" h="466" val="<?php echo $fristStar['id']?>"><?php echo $fristStar['name']?></div>
+<input id="WebDomain" type="hidden" value="" />
+<div id="CurStarName" w="705" h="466" val="<?php echo $fristStar['albumUrl'][0]['id']?>"><?php echo $fristStar['name']?></div>
 <div id="PhotoArea">
 <div id="PhotoInnerArea" style="width: 705px; height: 466px;">
 <img id="CurStarImg" src="<?php echo $fristStar['albumUrl'][0]['image'] ?>" alt="" title="" style="width: 310px; height: 466px; margin-left: 197px; margin-top: 0px;" />
@@ -41,11 +41,11 @@
 <div id="PhotoPre" class="preNormal"></div>
 <div id="PhotoTbList" style="width: 600px; height: 150px;">
 <div id="PhotoInnerList" style="width: 55320px; height: 150px;">
-<?php foreach ($stars as $star) 
+<?php $f = 0; foreach ($stars as $star) 
 		foreach ($star['albumUrl'] as $album) {?>
-			<div id="<?php echo 'T'.$star['id']?>" class="photoContent" style="width: 120px; height: 150px;" s="<?php echo $star['id']?>" i="<?php echo $star['id']?>" w="427" h="640" t="<?php echo $star['name']?>" u="<?php echo $album['image'] ?>">
-			<div id="<?php echo 'C'.$star['id']?>" class="photoNormal" style="width: 110px; height: 140px; margin-left: 4px; margin-top: 4px;">
-			<img src="<?php echo $album['image'] ?>" alt="<?php echo $star['id']?>" title="<?php echo $star['name']?>" style="width: 86px; height: 130px; margin-left: 12px; margin-top: 5px;" onclick="changePhoto(<?php echo "'".$star['id']."'" ?>)" />
+			<div id="<?php echo 'T'.$album['id']?>" class="photoContent" style="width: 120px; height: 150px;" s="<?php echo $star['id']?>" i="<?php echo $album['id']?>" w="427" h="640" t="<?php echo $star['name']?>" u="<?php echo $album['image'] ?>">
+			<div id="<?php echo 'C'.$album['id']?>" class="<?php if(!$f) echo 'photoActive'; else echo 'photoNormal';$f = 1?>" style="width: 110px; height: 140px; margin-left: 4px; margin-top: 4px;">
+			<img src="<?php echo $album['image'] ?>" alt="<?php echo $star['id']?>" title="<?php echo $star['name']?>" style="width: 86px; height: 130px; margin-left: 12px; margin-top: 5px;" onclick="changePhoto(<?php echo "'".$album['id']."'" ?>)" />
 			</div>
 			</div>
 <?php }?>

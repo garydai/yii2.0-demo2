@@ -48,7 +48,7 @@ function changePhoto(aid)
     var oldID = $("#CurStarName").attr("val");
     var sid = $("#T" + aid).attr("s");
     var url = $("#T" + aid).attr("u");
-  
+
     var w = Number($("#T" + aid).attr("w"));
     var h = Number($("#T" + aid).attr("h"));
     var title = $("#T" + aid).attr("t");
@@ -99,6 +99,7 @@ function changePhoto(aid)
         $("#CurStarName").attr("val", aid);
 
         $("#CurStarImg").css("width", tw).css("height", th).css("margin-left", (sw - tw) / 2).css("margin-top", (sh - th) / 2);
+       
         $("#CurStarImg").attr("title", title);
 
         $("#C" + oldID).removeClass("photoActive").addClass("photoNormal");

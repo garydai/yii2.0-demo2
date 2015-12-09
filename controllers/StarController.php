@@ -52,8 +52,8 @@ class StarController extends Controller
         $connection=Yii::$app->db;
         $sql = "select * from stars left join images on stars.avatar = images.id ORDER BY CONVERT( name USING gbk ) COLLATE gbk_chinese_ci ASC ";
         $stars = $connection->createCommand( $sql)->queryAll();
-        var_dump ($stars);
-       // return $this->render('archives', ['stars'=>$stars]);
+        
+        return $this->render('archives', ['stars'=>$stars]);
     }
 
     public function actionAlbums()

@@ -52,12 +52,18 @@ class StarController extends Controller
         $connection=Yii::$app->db;
         $sql = "select * from stars ORDER BY CONVERT( name USING gbk ) COLLATE gbk_chinese_ci ASC ";
         $stars = $connection->createCommand( $sql)->queryAll();
+        $stars[0] var_add
        // var_dump ($stars);
         return $this->render('archives', ['stars'=>$stars]);
     }
 
     public function actionAlbums()
     {
+        $connection=Yii::$app->db;
+        $sql = "select * from stars ORDER BY CONVERT( name USING gbk ) COLLATE gbk_chinese_ci ASC ";
+        foreach ($stars as $star) {
+            
+        }
         return $this->render('albums');
     }
 

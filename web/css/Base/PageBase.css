@@ -4,7 +4,7 @@
 }
 body {
 	background-color:#fff;
-	background-image:url(../../Images/web/body_b.png);
+	background-image:url(../../images/web/body_b.png);
 	background-repeat:repeat-x;
 	background-position:0 0;
 	font-family: Arial, Helvetica, sans-serif;
@@ -27,7 +27,7 @@ ul, li, div, dl, dt, dd, h1, h2, h3, h4, em {
 	width:960px;
 	margin:0 auto;
 	text-align:left;
-	background-image:url(../../Images/web/body_bg.jpg);
+	background-image:url(../../images/web/body_bg.jpg);
 	background-repeat:no-repeat;
 	background-position:center 0;
 }
@@ -35,7 +35,7 @@ ul, li, div, dl, dt, dd, h1, h2, h3, h4, em {
 {
     margin-top:30px;
     min-height:500px;
-    background-image:url(../../Images/web/line_bg.png);
+    background-image:url(../../images/web/line_bg.png);
 	background-repeat: repeat-y;
 	background-position:672px 0;
 }
@@ -74,8 +74,8 @@ blr:expression(this.onFocus=this.blur())
 	width:960px;
 	height:56px;
 	margin:0 auto;
-	background-image:url(../../Images/web/menu_bg.png);
-	_background-image:url(../../Images/web/menu_bg.gif);
+	background-image:url(../../images/web/menu_bg.png);
+	_background-image:url(../../images/web/menu_bg.gif);
 	background-repeat:no-repeat;
 	background-position:0 4px;
 	line-height:18px;
@@ -94,8 +94,8 @@ blr:expression(this.onFocus=this.blur())
 }
 .nav li a p{font-size:9px;font-weight:400;}
 .nav li a:hover {
-	background-image:url(../../Images/web/menu_over.png);
-	_background-image:url(../../Images/web/menu_over.gif);
+	background-image:url(../../images/web/menu_over.png);
+	_background-image:url(../../images/web/menu_over.gif);
 	background-repeat:no-repeat;
 	background-position:0 0;
 	
@@ -116,7 +116,7 @@ blr:expression(this.onFocus=this.blur())
 	line-height:25px;
 	text-align:center;
 	color:#656565;
-	background-image:url(../../Images/web/bottom_bg.png);
+	background-image:url(../../images/web/bottom_bg.png);
 	background-repeat: repeat-x;
 	background-position:0 0;
 	margin-top:20px; 
@@ -276,7 +276,7 @@ blr:expression(this.onFocus=this.blur())
 	border:solid 1px #DEE1E5;
 }
 .btn_out_page {
-	background-image:url(../../Images/web/btn_bg.png);
+	background-image:url(../../images/web/btn_bg.png);
 	background-repeat:no-repeat;
 	background-position:0 0;
 	width:52px;
@@ -286,7 +286,7 @@ blr:expression(this.onFocus=this.blur())
 	margin-left:5px;
 }
 .btn_over_page {
-	background-image:url(../../Images/web/btn_bg.png);
+	background-image:url(../../images/web/btn_bg.png);
 	background-repeat:no-repeat;
 	background-position:0 -24px;
 	width:52px;
@@ -301,7 +301,7 @@ blr:expression(this.onFocus=this.blur())
 	padding-left:13px;
 	padding-top:7px;
 	height:25px;
-	background-image:url(../../Images/web/right_title_bg.png);
+	background-image:url(../../images/web/right_title_bg.png);
 	background-position:0 0;
 	background-repeat: no-repeat;
 	color:#fff;

@@ -5,7 +5,7 @@
 
     	<?php $oldC = '-'; foreach ($stars as $star) { if($oldC != $star["namefirstchar"]) { $oldC = $star["namefirstchar"];?>
       		<div class="list_a">
-				<img src="<?php echo '../Images/Stars/star_'.$star['namefirstchar'].'.jpg' ?>" alt=<?php echo $star["namefirstchar"] ?> />
+				<img src="<?php echo '../images/Stars/star_'.$star['namefirstchar'].'.jpg' ?>" alt=<?php echo $star["namefirstchar"] ?> />
 			 </div>
        <?php } ?>
 			<div class="user_l">

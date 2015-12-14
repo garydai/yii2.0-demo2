@@ -1,12 +1,12 @@
 
-<link type="text/css" rel="Stylesheet" href="Css/Stars/Album.css" />
+<link type="text/css" rel="Stylesheet" href="css/Stars/Album.css" />
 
 
-<script type="text/javascript" src="Javascript/Stars/Album.js"></script>
+<script type="text/javascript" src="javascript/Stars/Album.js"></script>
   <div id="content" class="wrap">
     <div class="starsDiv">
 <div class="w-nitm">
-<img src="../Images/gallery/all.png" alt="全部" />
+<img src="../images/gallery/all.png" alt="全部" />
 <a href="#" >全部明星</a>
 </div>
 <div id="StarsInfoDiv">
@@ -17,7 +17,7 @@
 			if($old != '-') echo '</div>'; 
 			$old = $star['namefirstchar']; ?>
 			<div class="u-nitm">
-			<img src="<?php echo '../Images/Stars/vdo_'.$star['namefirstchar'].'.png' ?>" alt="" />
+			<img src="<?php echo '../images/Stars/vdo_'.$star['namefirstchar'].'.png' ?>" alt="" />
 	<?php }    ?> 
 	<a id="<?php echo "S".$star['id'] ?>" href="#" onclick="setAlbum(<?php echo "'".$star['id']."'" ?>);"><?php echo $star['name']?></a>
 	
@@ -35,7 +35,7 @@
 </div>
 </div>
 <div id="PhotoLoad">
-<img id="" src="../Images/JQuery/loading.gif">
+<img id="" src="../images/JQuery/loading.gif">
 </div>
 <div id="PhotoList" w="120" n="5" a="461" c="1">
 <div id="PhotoPre" class="preNormal"></div>

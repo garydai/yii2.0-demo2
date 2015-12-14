@@ -22,7 +22,7 @@
 
               <div>                     
            <div id="VideoDiv">
-               <img src="Images/Index/3.png" alt="" />
+               <img src="images/Index/3.png" alt="" />
                <div class="tab">
                          <span id="CHBtn" class="lanActive">CH</span>
                          <span id="ENBtn" class="lanNormal">EN</span>
@@ -34,14 +34,14 @@
                <div id="ENText">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Huayi Brothers Arist Agency</em>,intro</div>
            </div>
            <div id="NewsDiv">
-               <img src="Images/Index/2.png" alt="" />
+               <img src="images/Index/2.png" alt="" />
                <div class="index_l">
 <ul>
 
  <?php foreach ($news as $new) {?>
     <li>
-    <strong class="newsTg" onclick="searchTag('华谊')"><?php echo "[$new->tag]" ?></strong>
-    <a href="http://www.hbstars.com/News/20150415/1504150000.shtml" target="_blank"><?php echo $new->title ?>
+    <strong class="newsTg" onclick=""><?php echo "[$new->tag]" ?></strong>
+    <a href="<?php echo '/index.php?r=news/article&id='."{$new->id}" ?>" target="_blank"><?php echo $new->title ?>
     </a><br />
     <span>  <?php echo $new->content ?></span>
     </li>
@@ -52,7 +52,7 @@
                <a href="News/Default.shtml" class="more">更多新闻...</a>
            </div>
            <div id="StarDiv">
-               <img src="Images/Index/11.png" alt="" />
+               <img src="images/Index/11.png" alt="" />
                <div class="star_l">
 <div class="starDiv">
 <a href="http://zhongchuxi.hbstars.com" target="_blank">

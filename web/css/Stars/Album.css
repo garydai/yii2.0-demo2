@@ -25,7 +25,7 @@
 }
 
 #CurStarName{height: 30px;clear: both;font-size:14px;font-weight:700;padding-left:10px;color:#af0a0a;line-height:30px;}
-#PhotoArea{padding-bottom:5px;padding-right:5px;width:705px;height:466px;background:url(../../Images/gallery/showphotobg.png) no-repeat right bottom;}
+#PhotoArea{padding-bottom:5px;padding-right:5px;width:705px;height:466px;background:url(../../images/gallery/showphotobg.png) no-repeat right bottom;}
 #PhotoLoad
 {
     height: 471px;
@@ -43,9 +43,9 @@
 }
 #PhotoInnerArea{}
 #PhotoList:after{clear:both;content:'.';display:block;visibility:hidden;font-size:0;line-height:0;}
-#PhotoList{position:relative;zoom:1;height:160px;padding:15px 50px;background:url(../Images/gallery/showphotobg1.png) no-repeat center 0;}
-#PhotoPre{position:absolute;left:10px;background:url(../../Images/gallery/leftarr.png) no-repeat left center;text-indent:-99999px; cursor:pointer;}
-#PhotoNext{position:absolute;right:10px;background:url(../../Images/gallery/rightarr.png) no-repeat right center;text-indent:-99999px; cursor:pointer;}
+#PhotoList{position:relative;zoom:1;height:160px;padding:15px 50px;background:url(../images/gallery/showphotobg1.png) no-repeat center 0;}
+#PhotoPre{position:absolute;left:10px;background:url(../../images/gallery/leftarr.png) no-repeat left center;text-indent:-99999px; cursor:pointer;}
+#PhotoNext{position:absolute;right:10px;background:url(../../images/gallery/rightarr.png) no-repeat right center;text-indent:-99999px; cursor:pointer;}
 .preNormal
 {width: 30px;height: 150px;float: left;color: #CCC;}
 .preActive{width: 30px; height: 150px;float: left;}
@@ -82,7 +82,7 @@
     float: left;
 }
 .photoActive{width:110px;height:141px;border: solid 1px #b70b18;}
-.photoNormal{width:110px;height:141px;padding:1px;background:url(../Images/gallery/showphotobg2.png) no-repeat;}
+.photoNormal{width:110px;height:141px;padding:1px;background:url(../images/gallery/showphotobg2.png) no-repeat;}
 .w-nitm{line-height:60px;}
 .w-nitm img{margin-right:10px; vertical-align:middle;}
 .u-nitm{position:relative;zoom:1;padding-left:34px;margin-top:10px;line-height:26px;}
@@ -90,8 +90,8 @@
 .u-nitm a{margin-right:1em;white-space:nowrap;}
 
 .nav li a#A5 {
-    background-image:url(../../Images/web/menu_over.png);
-     _background-image:url(../../Images/web/menu_over.gif);
+    background-image:url(../../images/web/menu_over.png);
+     _background-image:url(../../images/web/menu_over.gif);
     background-repeat:no-repeat;
     background-position:0 0;
 }

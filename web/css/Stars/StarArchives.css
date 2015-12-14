@@ -53,8 +53,8 @@
     text-decoration:underline;
 }
 .nav li a#A3 {
-	background-image:url(../../Images/web/menu_over.png);
-	 _background-image:url(../../Images/web/menu_over.gif);
+	background-image:url(../../images/web/menu_over.png);
+	 _background-image:url(../../images/web/menu_over.gif);
 	background-repeat:no-repeat;
 	background-position:0 0;
 }

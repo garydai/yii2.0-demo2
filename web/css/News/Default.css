@@ -11,7 +11,7 @@
 	vertical-align:middle;
 }
 .btnNor {
-	background-image:url(../../Images/web/btn_bg.png);
+	background-image:url(../../images/web/btn_bg.png);
 	background-repeat:no-repeat;
 	background-position:0 0px;
 	width:52px;
@@ -24,7 +24,7 @@
 	line-height:24px;
 }
 .btnAct {
-	background-image:url(../../Images/web/btn_bg.png);
+	background-image:url(../../images/web/btn_bg.png);
 	background-repeat:no-repeat;
 	background-position:0 -24px;
 	width:52px;
@@ -183,7 +183,7 @@
 }
 .left .read {
     margin:10px;
-	background-image:url(../../Images/web/new_line.png);
+	background-image:url(../../images/web/new_line.png);
 	background-position:0 bottom;
 	background-repeat:repeat-x;
 	padding:12px 0;
@@ -204,8 +204,8 @@
     margin-right:10px;
 }
 .nav li a#A2 {
-	background-image:url(../../Images/web/menu_over.png);
-	 _background-image:url(../../Images/web/menu_over.gif);
+	background-image:url(../../images/web/menu_over.png);
+	 _background-image:url(../../images/web/menu_over.gif);
 	background-repeat:no-repeat;
 	background-position:0 0;
 }

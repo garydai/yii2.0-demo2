@@ -20,12 +20,12 @@ AppAsset::register($this);
 
     <title>烛龙文化经纪有限公司-首页</title>
 
-    <link type="text/css" rel="Stylesheet" href="Css/Base/PageBase.css" />
-    <link type="text/css" rel="Stylesheet" href="Css/Base/imageflow.css" />
+    <link type="text/css" rel="Stylesheet" href="css/Base/PageBase.css" />
+    <link type="text/css" rel="Stylesheet" href="css/Base/imageflow.css" />
 
-    <script type="text/javascript" src="Javascript/Base/jquery.js"></script>
-    <script type="text/javascript" src="Javascript/Base/highslide.js"></script>
-    <script type="text/javascript" src="Javascript/Base/imageflow.js"></script>
+    <script type="text/javascript" src="javascript/Base/jquery.js"></script>
+    <script type="text/javascript" src="javascript/Base/highslide.js"></script>
+    <script type="text/javascript" src="javascript/Base/imageflow.js"></script>
 
 </head>
 <body>

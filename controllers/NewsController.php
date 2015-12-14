@@ -8,7 +8,7 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
-
+use app\models\News;
 class NewsController extends Controller
 {
     public function behaviors()
@@ -49,7 +49,20 @@ class NewsController extends Controller
 
     public function actionIndex()
     {
-        return $this->render('index');
+        $count = News::find()->count();
+        $news = News::find()->orderBy("createTime desc")->all();
+        $page = 1;
+        if(isset($_GET['page']))
+            $page = $_GET['page'];
+        return $this->render('index', ["news"=>$news, 'page'=>$page]);
+    }
+
+    public function actionArticle()
+    {
+        $id = $_GET['id'];
+        $article = News::find()->where(["id"=>$id])->one();
+       // echo $id;
+        return $this->render('article', ['article'=>$article]);
     }
 
 

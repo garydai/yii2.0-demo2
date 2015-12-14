@@ -49,7 +49,8 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        $news = News::find()->all();
+        
+        $news = News::find()->orderBy('createTime desc')->limit(3)->all();
       //  var_dump($news);
         //echo $news[0]->title;
         return $this->render('index', ['news'=>$news]);

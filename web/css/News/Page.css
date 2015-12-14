@@ -13,7 +13,7 @@
 .middle .show
 {
     margin-bottom:26px;
-    background-image:url(../../Images/web/new_line.png);
+    background-image:url(../../images/web/new_line.png);
     background-position:0 bottom;
     background-repeat:repeat-x;
     padding:12px 0;
@@ -31,7 +31,7 @@
 }
 .middle .read{
     color:#A20F1A;
-    background-image:url(../../Images/web/new_line.png);
+    background-image:url(../../images/web/new_line.png);
     background-position:0 bottom;
     background-repeat:repeat-x;
     padding:12px 0;
@@ -69,8 +69,8 @@
     color:#A20F1A;
 }
 .nav li a#A2 {
-	background-image:url(../../Images/web/menu_over.png);
-	_background-image:url(../../Images/web/menu_over.gif);
+	background-image:url(../../images/web/menu_over.png);
+	_background-image:url(../../images/web/menu_over.gif);
 	background-repeat:no-repeat;
 	background-position:0 0;
 }

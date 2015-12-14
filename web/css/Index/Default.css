@@ -189,7 +189,7 @@
 {
     clear:both;
     height:52px;
-    background-image:url(../../Images/index/friend.gif);
+    background-image:url(../../images/Index/friend.gif);
     background-repeat:no-repeat;
     background-position:10px 20px;
     margin-top:55px;
@@ -204,7 +204,7 @@
 {
     line-height:25px;
     margin-top:14px;
-    background-image:url(../../Images/index/new_bg.gif);
+    background-image:url(../../images/Index/new_bg.gif);
     background-repeat:repeat-x;
     background-position:0 77px;
     margin-left:14px;
@@ -252,8 +252,8 @@
     margin-left: 5px;
 }
 .nav li a#A1 {
-	background-image:url(../../Images/web/menu_over.png);
-	 _background-image:url(../../Images/web/menu_over.gif);
+	background-image:url(../../images/web/menu_over.png);
+	 _background-image:url(../../images/web/menu_over.gif);
 	background-repeat:no-repeat;
 	background-position:0 0;
 }
@@ -281,4 +281,11 @@
     color: #A20F1A
 }
 
-#ENBtn{    cursor:pointer;}#CHBtn{    cursor:pointer;}
+#ENBtn
+{
+    cursor:pointer;
+}
+#CHBtn
+{
+    cursor:pointer;
+}

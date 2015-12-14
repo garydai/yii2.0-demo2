@@ -45,8 +45,8 @@
 #InfoDiv,#TitDiv
 {
     height: 42px;
-    background-image:url(../../Images/web/v_t_bg.png);
-    _background-image:url(../../Images/web/v_t_bg.gif);
+    background-image:url(../../images/web/v_t_bg.png);
+    _background-image:url(../../images/web/v_t_bg.gif);
     background-repeat:no-repeat;
     background-position:left bottom;
     display: none;
@@ -172,8 +172,8 @@
 
 }
 .nav li a#A4 {
-	background-image:url(../../Images/web/menu_over.png);
-	 _background-image:url(../../Images/web/menu_over.gif);
+	background-image:url(../../images/web/menu_over.png);
+	 _background-image:url(../../images/web/menu_over.gif);
 	background-repeat:no-repeat;
 	background-position:0 0;
 }

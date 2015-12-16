@@ -43,7 +43,7 @@
     <strong class="newsTg" onclick=""><?php echo "[$new->tag]" ?></strong>
     <a href="<?php echo '/index.php?r=news/article&id='."{$new->id}" ?>" target="_blank"><?php echo $new->title ?>
     </a><br />
-    <span>  <?php echo $new->content ?></span>
+    <span> <?php echo mb_substr(strip_tags($new->content), 0, 100, "utf-8");?></span>
     </li>
 
 <?php } ?>

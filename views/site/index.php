@@ -1,9 +1,18 @@
+
+
+
+
+
 <div id="discuss" class="content-section-b">
 <div class="container">
  <div class="row">
 
         <div class="col-md-8">
-
+        <div id="hdTotalPage" style="display: none;"><?php echo $count?></div>
+           
+            
+    
+ 
  
             <div class="new-post pad-bottom" data-bind="visible: signedIn">
                 <div method="post" action="/index.php?r=site/add_comment">
@@ -14,7 +23,7 @@
                     <input type="submit" class="btn btn-danger" id="submitmsg">
                 </div>
             </div>
- 
+            
             <ul class="posts list-unstyled" id="board">
                 <?php foreach ($discuss as $m) {?>
                 <li>
@@ -30,11 +39,37 @@
                 </li>
                 <?php }?>
             </ul>
+          
+            <div id="page-selection"></div>
         </div>
+         
     </div>
  
 </div>
 </div>
+
+    <script>
+        // init bootpag
+      //   window.alert($('#hdTotalPage').text());
+        $('#page-selection').bootpag({
+
+            total: $('#hdTotalPage').text(),
+            page: 1,
+            maxVisible: 10
+        }).on("page", function(event, /* page number here */ num){
+            $.ajax({
+                    type: "post",
+                    url: "/index.php?r=site/getcomment",
+                    data:{'num':num},
+                    success: function(html) {
+                       // window.alert(html);
+                        $("#board").html(html);
+
+                    }
+                });
+            
+        });
+    </script>
 
 <script type="text/javascript">
     $("#submitmsg").click(function(){

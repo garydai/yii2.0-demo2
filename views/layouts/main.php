@@ -27,7 +27,7 @@ use app\assets\AppAsset;
 <title>友帮网</title>
  
 <link href="css/bootstrap.min.css" rel="stylesheet">
- 
+<link href="css/bootstrap2.min.css" rel="stylesheet">
 <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
 <link href="css/general.css" rel="stylesheet">
@@ -41,7 +41,8 @@ use app\assets\AppAsset;
 <link href="css/discuss.css" rel="stylesheet">
 <link rel="stylesheet" href="css/magnific-popup.css">
 <script type="text/javascript" src=" /js/jquery-2.1.1.min.js"></script>
-<script src="js/modernizr-2.6.2.min.js"></script>  
+<script src="js/modernizr-2.6.2.min.js"></script> 
+<script src="js/jquery.bootpag.min.js"></script> 
 </head>
 <body id="home">
  
@@ -145,7 +146,7 @@ use app\assets\AppAsset;
 <div class="container">
 <div class="row">
 <div class="col-sm-6 pull-right wow fadeInRightBig">
-<img class="img-responsive " src="img/ipad.png" alt="">
+<img class="img-responsive " src="img/fb.png" alt="">
 </div>
 <div class="col-sm-6 wow fadeInLeftBig" data-animation-delay="200">
 <h2 class="section-heading">愿景</h2>

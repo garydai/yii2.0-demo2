@@ -49,10 +49,33 @@ class SiteController extends Controller
     public function actionIndex()
     {
         
-        $discuss = Discuss::find()->orderBy('createTime desc')->all();
+        $discuss = Discuss::find()->orderBy('createTime desc')->limit(20)->all();
+        $count = Discuss::find()->count()/20+1;
       //  var_dump($news);
         //echo $news[0]->title;
-        return $this->render('index', ['discuss'=>$discuss]);
+        return $this->render('index', ['discuss'=>$discuss, 'count'=>$count]);
+    }
+
+    public function actionGetcomment()
+    {
+         $num = $_POST['num'];
+         $num -= 1;
+         $discuss =  Discuss::find()->orderBy('createTime desc')->offset($num*20)->limit(20)->all();
+         $result = '';
+         foreach ($discuss as $m) {
+
+               $html = '<li>
+                    <p>
+                        <span class="username"></span>'.$m->ip.'<br />
+                    </p>
+                    <p>
+                        <span >'.$m->message.'</span>
+                    </p>
+                    <p class="no-pad-bottom date-posted">Posted <span />'.$m->createTime.'</p>
+                </li>';
+                $result .= $html;
+          } 
+          return $result;
     }
 
     public function actionAdd_comment()

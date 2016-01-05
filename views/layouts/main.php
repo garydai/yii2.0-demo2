@@ -27,7 +27,7 @@ use app\assets\AppAsset;
 <title>友帮网</title>
  
 <link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/bootstrap2.min.css" rel="stylesheet">
+<!--link href="css/bootstrap2.min.css" rel="stylesheet"-->
 <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
 <link href="css/general.css" rel="stylesheet">
@@ -140,9 +140,10 @@ use app\assets\AppAsset;
 </div> 
 </div> 
 </div>
+
 </div>
- 
-<div id="useit" class="content-section-a">
+<hr class="seperator" />
+<div id="useit" class="content-section-a section-yuanjing">
 <div class="container">
 <div class="row">
 <div class="col-sm-6 pull-right wow fadeInRightBig">
@@ -157,11 +158,11 @@ use app\assets\AppAsset;
 </div>
 </div>
 </div>
- 
-</div>
 
- 
-<div id="screen" class="content-section-b">
+</div>
+<hr class="seperator" />
+
+<div id="screen" class="content-section-b section-xiazai ">
 <div class="container">
 <div class="row">
 <div class="col-md-6 col-md-offset-3 text-center wrap_title ">
@@ -173,12 +174,13 @@ use app\assets\AppAsset;
 <div class="col-md-6 col-md-offset-3 text-center wrap_title">
 <h2></h2>
 <p class="lead" style="margin-top:0"></p>
-<a href="#downloadlink" class="btn wow  btn-embossed btn-primary  " data-wow-delay="1.2s"><span class="network">点击下载</span></a>
-</div>
+<a href="#downloadlink" class="btn wow tada btn-embossed btn-primary  animated animated" data-wow-delay="1.2s"><span class="network">点击下载</span></a>
 </div>
 </div>
 </div>
 
+</div>
+<hr class="seperator" />
  
 <div id="contact" class="content-section-a">
 <div class="container">
@@ -187,7 +189,7 @@ use app\assets\AppAsset;
 <h2>联系我们</h2>
 <p class="lead" style="margin-top:0"></p>
 </div>
-<form role="form" action="" method="post">
+<form  id="contactForm1" role="form" action="index.php?r=site/email" method="post">
 <div class="col-md-6">
 <div class="form-group">
 <label for="InputName">Your Name</label>
@@ -213,18 +215,36 @@ use app\assets\AppAsset;
 <input type="submit" name="submit" id="submit" value="Submit" class="btn wow tada btn-embossed btn-primary pull-right">
 </div>
 </form>
-<hr class="featurette-divider hidden-lg">
+
 <div class="col-md-5 col-md-push-1 address">
 <address>
 <h3>公司地址</h3>
 <p class="lead">浙江省杭州市江干区艮山西路102号杭州创意设计中心B幢3027室<br>
 微信: you_qiubiying<br>
-邮箱: ywyb_wx@163.com</p>
+邮箱: contact@ubangwang.com</p>
 </address>
 </div>
 </div>
 </div>
+
 </div>
+<hr class="seperator" />
+
+<script type="text/javascript">
+    var frm = $('#contactForm1');
+    frm.submit(function (ev) {
+        $.ajax({
+            type: frm.attr('method'),
+            url: frm.attr('action'),
+            data: frm.serialize(),
+            success: function (data) {
+                alert('ok');
+            }
+        });
+
+        ev.preventDefault();
+    });
+</script>
 
  <?php echo $content; ?>
 
@@ -260,7 +280,7 @@ use app\assets\AppAsset;
         particleColor: '#fff',
       
         interactive: true,
-        speed: 'fast',
+        speed: 'medium',
         density: 'medium'
       };
       var particleCanvas = new ParticleNetwork(canvasDiv, options);

@@ -6,8 +6,14 @@
 <div id="discuss" class="content-section-b">
 <div class="container">
  <div class="row">
+<div class="col-md-6 col-md-offset-3 text-center wrap_title">
+        <h2>说点什么</h2>
+</div>
 
         <div class="col-md-8">
+
+
+
         <div id="hdTotalPage" style="display: none;"><?php echo $count?></div>
            
             
@@ -17,10 +23,10 @@
             <div class="new-post pad-bottom" data-bind="visible: signedIn">
                 <div method="post" action="/index.php?r=site/add_comment">
                     <div class="form-group">
-                        <label for="message">留言板</label>
+                        <label for="message"></label>
                         <textarea class="form-control" name="message" id="message" placeholder="说点什么"></textarea>
                     </div>
-                    <input type="submit" class="btn btn-danger" id="submitmsg">
+                    <input type="submit" class="btn wow tada btn-embossed btn-danger  animated animated" id="submitmsg">
                 </div>
             </div>
             

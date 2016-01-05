@@ -9,7 +9,7 @@ use yii\filters\VerbFilter;
 use app\models\Discuss;
 class SiteController extends Controller
 {
-    public $enableCsrfValidation = false;
+   // public $enableCsrfValidation = false;
     public function behaviors()
     {
         return [
@@ -87,7 +87,7 @@ class SiteController extends Controller
         //echo $ip;
         date_default_timezone_set('Asia/Shanghai');
         $discuss->createTime =  date('Y-m-d H:i:s');
-        $discuss->message = $_POST['msg'];;
+        $discuss->message = $_POST['msg'];
         $discuss->ip = $ip;
         $discuss->save();
         $html = '<li>
@@ -105,7 +105,19 @@ class SiteController extends Controller
         //echo $news[0]->title;
         //return $this->actionIndex();
     }
-
+    public function actionEmail()
+    {
+        $name = $_POST['InputName'];
+        $email = $_POST['InputEmail'];
+        $message = $_POST['InputMessage'];
+        
+        $cmd = 'echo '.$message.' | mailx -s '.$name.','.$email.' contact@ubangwang.com';
+        system($cmd);
+        echo $cmd;
+       // echo $cmd;
+      //  echo '已发送';
+           // return $this->render('index', ['discuss'=>$discuss, 'count'=>$count]);
+    }
 
 
 }
